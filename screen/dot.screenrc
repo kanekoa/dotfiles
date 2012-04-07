@@ -1,0 +1,53 @@
+##
+## .screenrc
+##
+
+##----------------------------------------
+## encoding
+##----------------------------------------
+defencoding UTF-8
+
+##----------------------------------------
+## keybinding
+##----------------------------------------
+escape ^t^t
+
+## emacs-like window split
+bind -c REGION 2 split
+bind -c REGION 1 only
+bind -c REGION 0 remove
+bind -c REGION o focus
+bind -c REGION \^ resize
+bind x command -c REGION
+
+##----------------------------------------
+## status line
+##----------------------------------------
+hardstatus alwayslastline "[%02c] %`%-w%{=b bw}%n %t%{-}%+w"
+
+##----------------------------------------
+## enable terminal(Terminal.app) scroll
+##----------------------------------------
+termcapinfo xterm* ti@:te@
+
+##----------------------------------------
+## disable startup message
+##----------------------------------------
+startup_message off
+
+##----------------------------------------
+## auto-detach when screen hangup
+##----------------------------------------
+autodetach on
+
+##----------------------------------------
+## shell
+##----------------------------------------
+shell zsh
+
+##----------------------------------------
+## set scroll back line
+##----------------------------------------
+defscrollback 5000
+
+
