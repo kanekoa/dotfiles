@@ -48,7 +48,9 @@
 (defvar run-xemacs (featurep 'xemacs))
 (defvar run-xemacs-no-mule
   (and run-xemacs (not (featurep 'mule))))
-(defvar run-carbon-emacs (and run-darwin window-system))
+(defvar run-carbon-emacs (featurep 'carbon-emacs-package))
+(defvar run-cocoa-emacs (and run-darwin window-system))
+
 ;;-----------------------------------------------------------------
 ;; elispと設定ファイルのディレクトリをload-pathに追加
 ;;-----------------------------------------------------------------
@@ -292,11 +294,15 @@
          )
   )
 ;;-----------------------------------------------------------------
-;; Settings for Carbon Emacs
+;; Settings for Carbon/Cocoa Emacs
 ;;-----------------------------------------------------------------
 (when
     (and run-carbon-emacs
          (load "init-carbon-emacs")
+         ))
+(when
+    (and run-cocoa-emacs
+         (load "init-cocoa-emacs")
          ))
 ;;-----------------------------------------------------------------
 ;; 以下、自動生成されたもの
