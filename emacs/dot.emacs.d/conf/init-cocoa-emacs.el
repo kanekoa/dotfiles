@@ -27,3 +27,25 @@
 ;; Command-Key and Option-Key
 (setq ns-command-modifier (quote meta))
 (setq ns-alternate-modifier (quote super))
+
+;; Font
+(set-face-attribute 'default nil
+            :family "Bitstream Vera Sans Mono"
+            ;:family "Monaco"
+            :height 125)
+            ;:height 120)
+		    ;:height 90)
+(set-fontset-font "fontset-default"
+		  'japanese-jisx0208
+		  '("Osaka" . "iso10646-1"))
+(set-fontset-font "fontset-default"
+		  'katakana-jisx0201
+		  '("Osaka" . "iso10646-1"))
+(setq face-font-rescale-alist
+      '((".*Monaco-bold.*" . 1.0)
+        (".*Monaco-medium.*" . 1.0)
+        (".*Osaka-bold.*" . 1.2)
+        (".*Osaka-medium.*" . 1.2)
+        ("-cdac$" . 1.4)))
+
+
