@@ -209,7 +209,10 @@
 ;;-------------------------
 ;; Ruby
 ;;-------------------------
-;; (load "init-ruby")
+(load "init-ruby")
+(load "init-ruby-electric")
+(load "init-ruby-block")
+(load "init-rcodetools")
 ;;-------------------------
 ;; PHP
 ;;-------------------------
