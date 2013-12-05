@@ -3,7 +3,7 @@
 ;;-----------------------------------------------------------------
 ;; set path
 ;;-----------------------------------------------------------------
-(setq exec-path (cons "/opt/local/bin" exec-path))
+(setq exec-path (cons "/usr/local/bin" exec-path))
 
 ;;-----------------------------------------------------------------
 ;; highlight-line
@@ -141,3 +141,5 @@
 (global-set-key "\C-xk" 'kill-buffer-and-window)
 
 (ffap-bindings)
+
+(cd "~/")
