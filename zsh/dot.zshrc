@@ -11,8 +11,8 @@ export LC_ALL=ja_JP.UTF-8
 #---------------------------------------
 # path
 #---------------------------------------
-export PATH=~/Library/perl5/bin:/usr/local/bin:/opt/local/bin:/usr/local/android_sdk/tools:/usr/local/flex_sdk/bin:$PATH
-export MANPATH=~/Library/perl5/man:/opt/local/share/man:$MANPATH
+export PATH=/usr/local/share/python:/usr/local/bin:/opt/local/bin:$PATH
+export MANPATH=/usr/local/share/man:/opt/local/share/man:$MANPATH
 
 #---------------------------------------
 # env
@@ -21,8 +21,8 @@ export MANPATH=~/Library/perl5/man:/opt/local/share/man:$MANPATH
 export SVN_EDITOR='/usr/bin/emacs'
 # misc
 export PAGER='less -R'
-export PERL_CPANM_OPT="--local-lib=~/Library/perl5"
-export PERL5LIB=~/Library/perl5/lib/perl5:$PERL5LIB
+#export PERL_CPANM_OPT="--local-lib=~/Library/perl5"
+#export PERL5LIB=~/Library/perl5/lib/perl5:$PERL5LIB
 export APPENGINE_SDK_HOME=/usr/local/appengine-java-sdk
 
 #---------------------------------------
@@ -47,6 +47,10 @@ alias -g N='| nkf'
 ## mysql
 alias mysql51-start='sudo -u mysql /usr/local/mysql51/bin/mysqld_safe &'
 alias mysql51='/usr/local/mysql51/bin/mysql'
+
+## ruby
+# export RBENV_ROOT=/usr/local/var/rbenv
+if which rbenv > /dev/null; then eval "$(rbenv init - zsh)"; fi
 
 #---------------------------------------
 # prompt
