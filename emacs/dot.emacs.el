@@ -250,6 +250,7 @@
 ;;(load "init-sgml")
 ;;(load "init-css")
 (load "init-zencoding")
+(load "init-sgml-match-mode")
 ;;-------------------------
 ;; TEX (yet another tex)
 ;;-------------------------
