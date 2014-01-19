@@ -203,6 +203,10 @@
 (load "init-actionscript")
 (load "init-js2")
 ;;-------------------------
+;; coffee script
+;;-------------------------
+(load "init-coffee")
+;;-------------------------
 ;; Python
 ;;-------------------------
 (load "init-python")
