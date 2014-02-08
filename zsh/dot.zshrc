@@ -25,6 +25,8 @@ export PAGER='less -R'
 #export PERL5LIB=~/Library/perl5/lib/perl5:$PERL5LIB
 export APPENGINE_SDK_HOME=/usr/local/appengine-java-sdk
 
+export WORDCHARS='*?_-.[]~=&;!#$%^(){}<>'
+
 #---------------------------------------
 # alias
 #---------------------------------------
@@ -158,3 +160,4 @@ zstyle ':completion:*' matcher-list 'm:{a-z}={A-Z}'
 # 補完候補をなるべく沢山表示
 #---------------------------------------
 setopt listpacked
+
