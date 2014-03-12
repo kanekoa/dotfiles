@@ -20,7 +20,7 @@
 			))
 
 (setq anything-enable-shortcuts 'alphabet)
-(global-set-key [?\C-\o] 'anything-at-point)
+(define-key global-map [(M S o)] 'anything-at-point)
 
 (substitute-key-definition 'kill-summary 'anything-show-kill-ring global-map)
 (substitute-key-definition 'execute-extended-command 'anything-execute-extended-command global-map)
