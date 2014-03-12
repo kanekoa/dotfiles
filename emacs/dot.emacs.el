@@ -127,6 +127,7 @@
 (load "init-moccur-edit")
 ;;(load "init-isearch-all")
 (load "init-ack")
+(load "init-git-grep")
 ;;---------------------------------
 ;; Shell, Terminal
 ;;---------------------------------
