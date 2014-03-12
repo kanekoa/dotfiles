@@ -21,6 +21,7 @@
 
 (setq anything-enable-shortcuts 'alphabet)
 (define-key global-map [(M S o)] 'anything-at-point)
+(define-key global-map [(M S i)] 'anything-imenu)
 
 (substitute-key-definition 'kill-summary 'anything-show-kill-ring global-map)
 (substitute-key-definition 'execute-extended-command 'anything-execute-extended-command global-map)
@@ -30,3 +31,4 @@
   (other-window 1)
   (switch-to-buffer buf))
 (setq anything-display-function 'anything-split-window)
+
