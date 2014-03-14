@@ -113,6 +113,7 @@
 (load "init-summarye")
 (load "init-fold-dwim")
 (load "init-surround-string")
+(load "init-window-toggle-division")
 ;;---------------------------------
 ;; Dired
 ;;---------------------------------
