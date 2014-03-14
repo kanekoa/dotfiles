@@ -15,11 +15,11 @@
          (chomp
           (shell-command-to-string "git rev-parse --show-toplevel")))
         (t
-         "")))
+         "~")))
 
 (defun git-grep (grep-dir command-args)
   (interactive
-   (let ((root (concat (git-root-directory) "~/")))
+   (let ((root (concat (git-root-directory) "/")))
      (list
       (read-file-name
        "Directory for git grep: " root root t)
