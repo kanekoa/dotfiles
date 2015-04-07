@@ -143,3 +143,7 @@
 (ffap-bindings)
 
 (cd "~/")
+
+;; rsync に失敗するのでバックアップファイルをつくらない
+(setq make-backup-files nil)
+(setq auto-save-default nil)

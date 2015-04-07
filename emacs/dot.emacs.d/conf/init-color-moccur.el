@@ -5,6 +5,8 @@
 ;; .svn以下は探さない
 (setq dmoccur-exclusion-mask
       (append '("\\~$" "\\.svn\\/\*") dmoccur-exclusion-mask))
+(setq dmoccur-exclusion-mask
+      (append '("\\~$" "\\.git\\/\*") dmoccur-exclusion-mask))
 
 (setq moccur-split-word t)
 
