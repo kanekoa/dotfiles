@@ -51,7 +51,8 @@ alias mysql51-start='sudo -u mysql /usr/local/mysql51/bin/mysqld_safe &'
 alias mysql51='/usr/local/mysql51/bin/mysql'
 
 ## ruby
-# export RBENV_ROOT=/usr/local/var/rbenv
+#export RBENV_ROOT=/usr/local/var/rbenv
+#export PATH=$RBENV_ROOT:$PATH
 if which rbenv > /dev/null; then eval "$(rbenv init - zsh)"; fi
 
 #---------------------------------------
@@ -161,3 +162,5 @@ zstyle ':completion:*' matcher-list 'm:{a-z}={A-Z}'
 #---------------------------------------
 setopt listpacked
 
+
+. `brew --prefix`/etc/profile.d/z.sh
