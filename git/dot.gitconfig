@@ -1,5 +1,17 @@
 [user]
-	email = akito.dev@gmail.com
-	name = akitok
+	email = kanekoa301@gmail.com
+	name = kanekoa
 [color]
 	ui = auto
+[core]
+	excludesfile = /Users/akito/.gitignore
+	editor = vim
+[alias]
+    b = branch
+    c = checkout
+    d = diff
+    p = diff --cached
+    s = commit --dry-run --short
+[merge "mergepbx"]
+	name = Xcode project files merger
+	driver = mergepbx %O %A %B
